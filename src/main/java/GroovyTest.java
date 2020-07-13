@@ -10,6 +10,7 @@ import com.config.OutputRule;
 import groovy.lang.Binding;
 import groovy.lang.GroovyShell;
 
+//TODO rename
 public class GroovyTest {
 
     private static List<Map<String, Object>> loanInputs = new ArrayList<>();
