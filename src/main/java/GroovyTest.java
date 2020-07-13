@@ -92,6 +92,14 @@ public class GroovyTest {
 
     }
 
+    /**
+     * lookupInputByCriteria
+     * @param inputMaps
+     * @param outputMap
+     * @param rule
+     * @param isAggregation
+     * @return
+     */
     private static Object lookupInputByCriteria(List<Map<String, Object>> inputMaps, Map<String, Object> outputMap,
                                                 OutputRule rule, boolean isAggregation) {
         String[] lookupColumns = rule.getLookupColumns();
