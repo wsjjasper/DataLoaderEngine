@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Map;
 
 import com.config.InputConfiguration;
-import com.config.OutputConfiguration;
+import com.config.EngineConfiguration;
 import com.config.OutputRule;
 
 import groovy.lang.Binding;
@@ -15,7 +15,7 @@ public class GroovyTest {
 
     private static List<Map<String, Object>> loanInputs = new ArrayList<>();
     private static List<Map<String, Object>> qeInputs = new ArrayList<>();
-    private static OutputConfiguration outputConf;
+    private static EngineConfiguration outputConf;
 
     static {
         for (int i = 0; i < 10; i++) {
@@ -60,7 +60,7 @@ public class GroovyTest {
         InputConfiguration[] otherInputs = new InputConfiguration[1];
         otherInputs[0] = otherInput;
 
-        outputConf = new OutputConfiguration("CI_OUTPUT_PERIOD", mainInput, otherInputs, rules);
+        outputConf = new EngineConfiguration("CI_OUTPUT_PERIOD", mainInput, otherInputs, rules);
 
     }
 
